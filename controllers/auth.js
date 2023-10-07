@@ -12,12 +12,11 @@ import Users from "../models/users.js";
 export const Login = async (req, res) =>{
     const user = await Users.findOne({
         where: {
+            password: req.body.password,
             email: req.body.email
         }
     });
-    if(!user) return res.status(404).json({msg: "User tidak ditemukan"});
-    const match = await(req.body.password, user.password);
-    if(!match) return res.status(400).json({msg: "Wrong Password"});
+    if(!user) return res.status(404).json({messge: "User Not Found"});
     req.session.userId = user.email;
     const id = user.id;
     const username = user.username;
