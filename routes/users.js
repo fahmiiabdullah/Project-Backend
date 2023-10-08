@@ -4,7 +4,6 @@ import {
     getUsersById, 
     createUsers 
 } from "../controllers/users.js"
-// import { verifyUser } from "../middleware/auth.js";
 
 const userRouter = Router();
 
