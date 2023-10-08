@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <!--ini header-->
+        <header>
+            <a href="#" class="logo-nbar">HARMON <span class="psi">Ψ</span> MIND      
+            </a>
+        
+            <ul class="menu-navbar">
+              <li><a href="Index.html" class="active">Home</a></li>
+              <li><a href="psikolog.html">Psychologist</a></li>
+              <li><a href="article.html">Article</a></li>
+              <li><a href="about-us.html">About Us</a></li>
+            </ul>
+        
+            <div class="main-navbar">
+              <a href="login.html" class="user"><i class="ri-user-fill"></i>Log In</a>
+              <a href="login.html">Sign Up</a>
+              <div class="bx bx-menu" id="menu-icon"></div>
+            </div>
+          </header>
+          <!--javascript-->
+          <script src="js/navbar.js"></script>
+        <!--akhir header-->
+          <script>
+            fetch("/psycologists/1")
+            .then(response =>{
+              return response.json();
+            }).then(data => {
+              console.log(data);
+            })
+          </script>
+</body>
+</html>

@@ -24,34 +24,3 @@ export const Login = async (req, res) =>{
     res.status(200).json({id, username, email,});
 }
 
-
-/**
- * 
- * @param {Express.Request} request 
- * @param {Express.Response} response 
- * @returns 
- */
-
-
-export const Me = async (request,response) => {
-    if(!request.session.userId){
-        return response.status(401).json({
-            message: "Please Log In to Your Account"
-        });
-    }
-    const user = await Users.findOne({
-        attributes:[
-            'id',
-            'username',
-            'email'
-        ],
-        where: {
-            email: request.session.userId
-        }
-    });
-    if(!user)
-    return response.status(404).json({
-        message: "User Not Found"
-    });
-    response.status(200).json(user);
-}

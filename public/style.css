@@ -1,0 +1,238 @@
+body {
+    background: #D9D9D9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    border: none;
+}
+
+/*ini navbar*/
+.navbar-tombol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+.navbar-tombol a {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  /* Style the links */
+  .navbar-tombol a {
+    position: relative; /* Needed for the underline effect */
+  }
+  
+  /* Add an underline effect on hover */
+  .navbar-tombol a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px; /* Adjust the height of the underline */
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff; /* Underline color */
+    transform: scaleX(0); /* Initially, the underline has no width */
+    transform-origin: bottom right;
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+  }
+  
+  .navbar-tombol a:hover::before {
+    transform: scaleX(1); /* Expand the underline on hover */
+    transform-origin: bottom left;
+  }
+
+.nav-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        padding-right: 40px;
+        background: rgba(63, 125, 182, 0.98);
+        position: auto;
+        width: auto;
+        height: 80px;
+        flex-shrink: 0;
+        font-family: 'poppins';
+}
+.logo {
+    width: 300px;
+    padding: 10px;
+    margin-left: 8px;
+    margin-top: 37px;
+}
+
+.navbar-tombol {
+    color: var(--muda);
+    padding: 30px;
+}
+
+.navbar-tombol a {
+    color: #E2EDE9;
+    padding: 10px;
+    font-weight: 500;
+    margin-right: 8px;
+}
+
+.navbar-tombol a:hover {
+    color: white;
+}
+
+#home {
+    max-width: 100%;
+}
+
+.home-page {
+    justify-items: center;
+}
+.login {
+    background-color: #4D9BE2FA;
+    border-radius: 5px;
+    color: #E2EDE9;
+    font-weight: bold;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Poppins';
+    margin-left: 80px;
+}
+
+.login:hover {
+    background-color: #E2EDE9;
+    color: #4D9BE2FA;
+}
+
+.sign-up {
+    background-color: #0f29bdce;
+    border-radius: 5px;
+    color: #E2EDE9;
+    font-weight: bold;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Poppins';
+}
+
+.sign-up:hover {
+    background-color: #ffffff;
+    color: #0f29bdce;
+}
+
+section {
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 1100px;
+    margin: auto;
+    position: relative;
+    box-sizing: border-box;
+}
+.flex-container {
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+.kolom {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-left: 90px;
+    flex: 1;
+}
+
+.kolom .deskripsi {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'poppins';
+    color:#FFB834;
+}
+
+h2 {
+    font-family: 'poppins';
+    font-weight: 800;
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: #364f6b;
+    width: 100%;
+    line-height: 50px;
+}
+
+.kami {
+    font-family: 'poppins';
+    font-weight: bold;
+    color: #364f6b;
+}
+
+.tbl-pink {
+    background: #4D9BE2FA;
+    font-family: 'poppins';
+    border-radius: 20px;
+    margin-top: 40px;
+    margin-left: 170px;
+    padding: 15px 20px 15px 20px;
+    /* color: #FFFFFF; */
+    cursor: pointer;
+    font-weight: bold;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+span {
+    color: #ffffff;
+}
+
+.tbl-pink:hover {
+    background: #364f6b;
+    text-decoration: none;
+}
+
+.home-image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+@media only screen and (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;
+        font-size: 12px;
+    }
+
+    .home-image {
+        width: 40%;
+        margin-left: 50px;
+    }
+
+    .kolom {
+        margin-left: 20px;
+        justify-content: center;
+    }
+
+    .tbl-pink {
+        margin-right: auto;
+    }
+}

@@ -1,0 +1,410 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+body{
+    background: rgb(255, 255, 255);
+}
+.daftar{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    padding: 1cm;
+}
+
+.row2{
+    display: flex;
+    flex-wrap: wrap;
+}
+.column {
+    width: 100%;
+    padding: 1cm 1cm 1cm 2cm;
+    text-align: center;
+}
+.card{
+    border: 1px solid black;
+    width: 100%;
+    height: 100%;
+    padding: 2cm 1.5cm;
+    background: linear-gradient(#ffffff 50%, #2c7bfe 50%);
+    background-size: 100% 200%;
+    background-position: 0 2.5%;
+    border-radius: 5px;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    transition: 0.5s;
+}
+h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1f194c;
+    margin: 0.5cm 0;
+}
+p {
+    color: #000000;
+    font-size: 15px;
+    line-height: 1.6;
+    letter-spacing: 0.03cm;
+}
+.icon-wrapper img {
+    position: relative;
+    margin: auto;
+    font-size: 30px;
+    height: 2.5cm;
+    width: 2.5cm;
+    color: #2c7bfe;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    transition: 0.5s;
+}
+.card:hover {
+    background-position: 0 100%;
+}
+.card:hover .icon-wrapper {
+    color: #2c7bfe;
+}
+.card:hover h3 {
+    color: #ffffff;
+}
+.card:hover p {
+    color: #f0f0f0;
+}
+@media screen and (min-width: 768px) {
+    section {
+        padding: 0 2cm;
+    }
+    .column {
+        flex: 0 50%;
+        max-width: 50%;
+    }
+}
+@media screen and (min-width: 992px) {
+    section {
+        padding: 1cm 3cm;
+    }
+    .column {
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+    }
+}
+/*ini navbar*/
+.navbar-tombol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+.navbar-tombol a {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  /* Style the links */
+  .navbar-tombol a {
+    position: relative; /* Needed for the underline effect */
+  }
+  
+  /* Add an underline effect on hover */
+  .navbar-tombol a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px; /* Adjust the height of the underline */
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff; /* Underline color */
+    transform: scaleX(0); /* Initially, the underline has no width */
+    transform-origin: bottom right;
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+  }
+  
+  .navbar-tombol a:hover::before {
+    transform: scaleX(1); /* Expand the underline on hover */
+    transform-origin: bottom left;
+  }
+
+.nav-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        padding-right: 40px;
+        background: rgba(63, 125, 182, 0.98);
+        position: auto;
+        width: auto;
+        height: 80px;
+        flex-shrink: 0;
+        font-family: 'poppins';
+}
+.logo {
+    width: 300px;
+    padding: 10px;
+    margin-left: 8px;
+    margin-top: 37px;
+}
+
+.navbar-tombol {
+    color: var(--muda);
+    padding: 30px;
+}
+
+.navbar-tombol a {
+    color: #E2EDE9;
+    padding: 10px;
+    font-weight: 500;
+    margin-right: 8px;
+}
+
+.navbar-tombol a:hover {
+    color: white;
+}
+
+.home {
+    width: 1440px;
+    height: 632px;
+    flex-shrink: 0;
+}
+.home-page {
+    justify-items: center;
+}
+.login {
+    background-color: #4D9BE2FA;
+    border-radius: 5px;
+    color: #E2EDE9;
+    font-weight: bold;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Poppins';
+    margin-left: 80px;
+}
+
+.login:hover {
+    background-color: #E2EDE9;
+    color: #4D9BE2FA;
+}
+
+.sign-up {
+    background-color: #0f29bdce;
+    border-radius: 5px;
+    color: #E2EDE9;
+    font-weight: bold;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Poppins';
+}
+
+.sign-up:hover {
+    background-color: #ffffff;
+    color: #0f29bdce;
+}
+/*ini untuk footer*/
+
+.footer-distributed{
+	background: rgba(63, 125, 182, 0.98);
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	font: bold 16px;
+	text-align: left;
+	padding: 50px 60px 40px;
+	overflow: hidden;
+    font-family: 'poppins', sans-serif;
+}
+
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	float: left;
+    margin: 0px;
+}
+
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 0 0 10px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer social icons */
+
+.footer-distributed .footer-icons{
+	margin-top: 40px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	float: right;
+}
+
+.footer-distributed .footer-right p{
+	display: inline-block;
+	vertical-align: top;
+	margin: 15px 42px 0 0;
+	color: #ffffff;
+}
+
+/* The contact form */
+
+.footer-distributed form{
+	display: inline-block;
+}
+
+.footer-distributed form input,
+.footer-distributed form textarea{
+	display: block;
+	border-radius: 3px;
+	box-sizing: border-box;
+	background-color:  #ffffff;
+	box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+	border: none;
+	resize: none;
+
+	font: inherit;
+	font-size: 14px;
+	font-weight: normal;
+	color:  #000000;
+
+	width: 400px;
+	padding: 18px;
+}
+
+.footer-distributed ::-webkit-input-placeholder {
+	color:  #5c666b;
+}
+
+.footer-distributed ::-moz-placeholder {
+	color:  #5c666b;
+	opacity: 1;
+}
+
+.footer-distributed :-ms-input-placeholder{
+	color:  #5c666b;
+}
+
+
+.footer-distributed form input{
+	height: 55px;
+	margin-bottom: 15px;
+}
+
+.footer-distributed form textarea{
+	height: 100px;
+	margin-bottom: 20px;
+}
+
+.footer-distributed form button{
+	border-radius: 3px;
+	background-color:  #33383b;
+	color: #ffffff;
+	border: 0;
+	padding: 15px 50px;
+	float: right;
+    font-family: 'poppins';
+}
+
+.footer-distributed form button:hover {
+    background-color: #161414;
+}
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 1000px) {
+
+	.footer-distributed {
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-company-name{
+		font-size: 12px;
+	}
+
+	.footer-distributed form input,
+	.footer-distributed form textarea{
+		width: 250px;
+	}
+
+	.footer-distributed form button{
+		padding: 10px 35px;
+	}
+
+}
+
+@media (max-width: 800px) {
+
+	.footer-distributed{
+		padding: 30px;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-right{
+		float: none;
+		max-width: 300px;
+		margin: 0 auto;
+	}
+
+	.footer-distributed .footer-left{
+		margin-bottom: 40px;
+	}
+
+	.footer-distributed form{
+		margin-top: 30px;
+	}
+
+	.footer-distributed form{
+		display: block;
+	}
+
+	.footer-distributed form button{
+		float: none;
+	}
+}

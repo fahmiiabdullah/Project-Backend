@@ -37,6 +37,13 @@ app.use(bodyParser.urlencoded());
 app.use(bodyParser.raw());
 app.use(bodyParser.json());
 
+app.use(express.static("public"));
+app.use("/karen-data", express.static("public/karen.html"));
+app.use("/putri-data", express.static("public/putri.html"));
+app.use("/angel-data", express.static("public/angel.html"));
+app.use("/joana-data", express.static("public/joana.html"));
+app.use("/kemal-data", express.static("public/kemal.html"));
+app.use("/naura-data", express.static("public/naura.html"));
 
 startSequelize(sequelize);
 

@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+
+/*ini untuk about us*/
+
+.konten-au{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  background-color: white;
+}
+
+.text-au { margin-left: 5px; margin-top: 0; }
+
+.us{
+    color: rgb(50, 50, 179);
+}
+
+.konten-gambar {
+    width: 1500px;
+    max-width: 55%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 0px;
+    margin-left: 100px;
+	margin-bottom: 70px;
+    border-radius: 30px;
+}
+
+.text-au {
+    width: 1500px;
+    margin-right: 25vh;
+    margin-top: 150px;
+}
+
+.text-au h2 {
+    font-size: 30px;
+    text-decoration: underline solid black;
+    text-decoration-skip: 0.4em;
+}
+
+.text-au p {
+    font-size: 20px;
+}
+
+/*ini our mission*/
+.our-mission {
+	background-color: #D9D9D9;
+	margin-left: 10vh;
+	margin-right: 10vh;
+	font-family: 'poppins';
+	font-size: larger;
+	border: 2px solid white;
+	border-radius: 100px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	padding-left: 50px;
+	padding-right: 50px;
+	background-color: white;
+}
+.our-mission h2 {
+	padding-top: 100px;
+	padding-bottom: 10px;
+	text-decoration: underline solid black;
+}
+
+.our-mission p {
+	padding-bottom: 100px;
+}
+
+.om-p2 {
+	text-align: right;
+}
+
+/*ini why choose us*/
+.why-us {
+	background-color: white;
+	font-family: 'poppins';
+	font-size: larger;
+	margin: 0;
+	padding-left: 150px;
+	padding-right: 150px;
+	border: 2px solid #D9D9D9;
+}
+
+.why-us h2 {
+	padding-top: 100px;
+	padding-bottom: 30px;
+	text-decoration: underline solid black;
+}
+
+.why-us p {
+	padding-bottom: 250px;
+	line-height: 40px;
+}
+
+/*ini untuk our team*/
+.our-team-head {
+    font-family: 'poppins';
+    text-align: center;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.our-team{
+    padding: 5px 0 7px;
+    background: #D9D9D9;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    font-family: 'poppins', sans-serif;
+    border: 1px solid rgba(63, 125, 182, 0.98);
+}
+
+.our-team .pic{
+    display: inline-block;
+    width: 500px;
+    height: 500px;
+    margin-bottom: 5px;
+    position: relative;
+    z-index: 1;
+}
+
+.our-team .pic:before
+{
+    content: "";
+    width: 100%;
+    background: lightblue;
+    position: absolute;
+    bottom: 150%;
+    right: 0;
+    left: 0; 
+    transform: scale(3);
+    transition: all 2s linear 0s;
+}
+
+.our-team:hover .pic:before
+{
+    height: 75%;
+}
+
+.our-team .pic:after
+{
+    content: "";
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    background: lightblue;
+    margin: 0 auto;
+}
+
+.our-team .pic img{
+    width: 50%;
+    height: auto;
+    border-radius: 50%;
+    transform: scale(1);
+    transition: all 0.9s ease 0s;
+    margin-top: 40px;
+}
+
+.our-team:hover .pic img
+{
+    box-shadow: 0 0 0 14px lightblue;
+    transform: scale(0.7);
+}
+
+.our-team .team-content
+{
+    margin-bottom: 10px;
+}
+
+.our-team .title{
+    font-size: 30px;
+    font-weight: 700;
+    color:#4e5052;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin-bottom: 0px;
+}
+
+.our-team .post{
+    display: block;
+    font-size: 20px;
+    color:#4e5052;
+    text-transform: capitalize;
+}
+
+/*ini untuk footer*/
+
+.footer-distributed{
+	background: rgba(63, 125, 182, 0.98);
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	font: bold 16px;
+	text-align: left;
+	padding: 50px 60px 40px;
+	overflow: hidden;
+    font-family: 'poppins', sans-serif;
+}
+
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	float: left;
+    margin: 0px;
+}
+
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 0 0 10px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer social icons */
+
+.footer-distributed .footer-icons{
+	margin-top: 40px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	float: right;
+}
+
+.footer-distributed .footer-right p{
+	display: inline-block;
+	vertical-align: top;
+	margin: 15px 42px 0 0;
+	color: #ffffff;
+}
+
+/* The contact form */
+
+.footer-distributed form{
+	display: inline-block;
+}
+
+.footer-distributed form input,
+.footer-distributed form textarea{
+	display: block;
+	border-radius: 3px;
+	box-sizing: border-box;
+	background-color:  #ffffff;
+	box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+	border: none;
+	resize: none;
+
+	font: inherit;
+	font-size: 14px;
+	font-weight: normal;
+	color:  #000000;
+
+	width: 400px;
+	padding: 18px;
+}
+
+.footer-distributed ::-webkit-input-placeholder {
+	color:  #5c666b;
+}
+
+.footer-distributed ::-moz-placeholder {
+	color:  #5c666b;
+	opacity: 1;
+}
+
+.footer-distributed :-ms-input-placeholder{
+	color:  #5c666b;
+}
+
+
+.footer-distributed form input{
+	height: 55px;
+	margin-bottom: 15px;
+}
+
+.footer-distributed form textarea{
+	height: 100px;
+	margin-bottom: 20px;
+}
+
+.footer-distributed form button{
+	border-radius: 3px;
+	background-color:  #33383b;
+	color: #ffffff;
+	border: 0;
+	padding: 15px 50px;
+	float: right;
+    font-family: 'poppins';
+}
+
+.footer-distributed form button:hover {
+    background-color: #161414;
+}
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 1000px) {
+
+	.footer-distributed {
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-company-name{
+		font-size: 12px;
+	}
+
+	.footer-distributed form input,
+	.footer-distributed form textarea{
+		width: 250px;
+	}
+
+	.footer-distributed form button{
+		padding: 10px 35px;
+	}
+
+}
+
+@media (max-width: 800px) {
+
+	.footer-distributed{
+		padding: 30px;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-right{
+		float: none;
+		max-width: 300px;
+		margin: 0 auto;
+	}
+
+	.footer-distributed .footer-left{
+		margin-bottom: 40px;
+	}
+
+	.footer-distributed form{
+		margin-top: 30px;
+	}
+
+	.footer-distributed form{
+		display: block;
+	}
+
+	.footer-distributed form button{
+		float: none;
+	}
+}
